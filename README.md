@@ -67,13 +67,13 @@ public int[][] reconstructQueue(int[][] people) {
             }
             else count=0; // assign count to 0, if there is break in h value from previous ones. 
             h = people[i][0];
-            int p = arr.get(pos); // Taking the pos <sup>th</sup> empty index. 
+            int p = arr.get(pos); // Taking the pos^th empty index. 
             
             // filling the empty index with current h and k.
             ans[p][0] = h;
             ans[p][1] = people[i][1];
             
-            // As the pos <sup>th</sup> index is filled, it is removed from the ArrayList.
+            // As the pos^th index is filled, it is removed from the ArrayList.
             arr.remove(pos);
         }
         return ans;
